@@ -40,7 +40,6 @@ const Blob = () => {
         vertexShader={vertexShader}
         fragmentShader={fragmentShader}
         uniforms={uniforms}
-        wireframe = {true}
       />
     </mesh>
   );
