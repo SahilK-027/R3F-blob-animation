@@ -26,14 +26,12 @@ const Blob = () => {
         0.02
       );
     }
-    mesh.current.rotation.y += delta * 0.2;
-    mesh.current.rotation.z += delta * 0.2;
   });
   return (
     <mesh
       ref={mesh}
       scale={1.5}
-      position={[3, 0, 0]}
+      position={[0, 0, 0]}
       onPointerOver={() => (hover.current = true)}
       onPointerOut={() => (hover.current = false)}
     >
@@ -42,6 +40,7 @@ const Blob = () => {
         vertexShader={vertexShader}
         fragmentShader={fragmentShader}
         uniforms={uniforms}
+        wireframe = {true}
       />
     </mesh>
   );
